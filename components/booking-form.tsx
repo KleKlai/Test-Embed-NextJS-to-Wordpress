@@ -31,11 +31,11 @@ export default function BookingWidget() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-md space-y-4">
+    <div className="w-full bg-white p-6 rounded-2xl shadow-md space-y-4">
       {error && <p className="text-red-500 text-sm">{error}</p>}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 w-full">
+        <div className="w-full">
           <label className="text-sm font-semibold text-gray-600">CHECK IN</label>
           <input
             type="date"
@@ -45,7 +45,7 @@ export default function BookingWidget() {
           />
         </div>
 
-        <div>
+        <div className="w-full">
           <label className="text-sm font-semibold text-gray-600">CHECK OUT</label>
           <input
             type="date"
@@ -55,7 +55,7 @@ export default function BookingWidget() {
           />
         </div>
 
-        <div>
+        <div className="w-full">
           <label className="text-sm font-semibold text-gray-600">GUESTS</label>
           <select
             value={guests}
